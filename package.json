@@ -1,0 +1,29 @@
+{
+  "name": "micq",
+  "version": "0.0.1",
+  "description": "一个非侵入式的 Minecraft OneBot 服务实现。",
+  "main": "lib/index.ts",
+  "repository": "https://github.com/Stapxs/micq",
+  "author": "Stapx Steve [林槐]",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/index.js",
+    "dev": "ts-node ./lib/index.ts",
+    "devn": "./node_modules/.bin/nodemon ./lib/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.1",
+    "@types/ws": "^8.5.5",
+    "log4js": "^6.9.1",
+    "minecraft-protocol": "^1.42.0",
+    "mineflayer": "^4.9.0",
+    "typescript": "^5.1.3",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  }
+}
